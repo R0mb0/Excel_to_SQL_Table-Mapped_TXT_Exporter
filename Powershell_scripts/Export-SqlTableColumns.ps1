@@ -1,7 +1,9 @@
-# Connection parameters - will be prompted to the user
+# Export-SqlTableColumns.ps1
+# Exports SQL Server table column properties to a CSV.
+
 Write-Host "=== EXPORT SQL SERVER TABLE COLUMNS PROPERTIES ==="
 
-$SqlServer = Read-Host "Enter SQL Server name (e.g.: localhost\SQLEXPRESS)"
+$SqlServer = Read-Host "Enter SQL Server name (e.g.: localhost\\SQLEXPRESS)"
 if ([string]::IsNullOrWhiteSpace($SqlServer)) {
     Write-Error "SQL Server name is required."
     exit 1

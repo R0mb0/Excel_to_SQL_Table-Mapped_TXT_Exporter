@@ -1,7 +1,7 @@
 <#
 .SYNOPSIS
     Converts all XLSX files in the script directory to pipe-delimited .txt files (Access-style),
-    according to column specifications/order read from a CSV file (typically produced by Export-SqlTableColumns_Version3.ps1).
+    according to column specifications/order read from a CSV file (typically produced by Export-SqlTableColumns.ps1).
 
 .DESCRIPTION
     - All .xlsx files and the column properties file (.csv) must be in the same folder as the script.
@@ -39,7 +39,7 @@ Write-Host "Column property file found: $($PropertiesCsv.Name)"
 # Load column configuration (FIXED DELIMITER ; as in export script)
 Write-Host "Loading column configuration from CSV..."
 $ColProps = Import-Csv -Path $PropertiesCsv.FullName -Delimiter ';'
-$ColumnOrder = $ColProps | Select-Object -ExpandProperty NomeColonna
+$ColumnOrder = $ColProps | Select-Object -ExpandProperty ColumnName
 Write-Host "Expected columns (order): $($ColumnOrder -join ', ')"
 
 # Check ImportExcel
