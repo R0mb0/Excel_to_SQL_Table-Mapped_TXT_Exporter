@@ -125,3 +125,11 @@ YourFolder/
 - Column names in Excel must exactly match those in the SQL table (case-sensitive).
 - Any missing columns in Excel will result in empty fields in the TXT file.
 - If you receive "script not allowed to run" errors, use the execution policy command above.
+
+<a href="https://github.com/R0mb0/Crafted_with_AI">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/CraftedWithAIDark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAILight.svg">
+    <img alt="Not made by AI" src="https://github.com/R0mb0/Crafted_with_AI/blob/main/Badge/SVG/NotMadeByAIDefault.svg">
+  </picture>
+</a>
